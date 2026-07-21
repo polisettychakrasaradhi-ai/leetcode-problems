@@ -1,0 +1,20 @@
+class Main {
+    public static void main(String[] args) {
+        Canb a = new Canb();
+        a.AccountDetails();
+        a.Bank();
+    }
+}
+
+abstract class ATM {
+    abstract void Bank(); // abstract method declaration
+    void AccountDetails() { // concrete method
+        System.out.println("Savings Account");
+    }
+}
+
+class Canb extends ATM {
+    void Bank() {
+        System.out.println("Canara Bank / SBI Bank");
+    }
+}
